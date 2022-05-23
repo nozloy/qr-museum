@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .neo {
+        box-shadow: 5px 5px 17px #d9d9d9,
+          -5px -5px 17px #ffffff;
+      }
+      .button {@apply text-base w-full font-medium px-6 py-2 leading-normal uppercase}
+      .buttonB {@apply button rounded-b-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer}
+      .buttonA {@apply button rounded-t-md bg-green-600 text-white  shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out flex justify-center}
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
