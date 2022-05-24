@@ -5,7 +5,7 @@ import AboutB from './AboutB'
 const ReaderB = () => {
 	return (
 		<motion.div
-			className=' h-screen overflow-y-scroll'
+			className=' h-screen'
 			initial={{ opacity: '0', x: 500 }}
 			animate={{ opacity: '1', x: 0 }}
 			exit={{ opacity: '1', x: 500, transition: { duration: '0.5' } }}
