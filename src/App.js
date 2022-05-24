@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 function App() {
 	return (
 		<div className='App'>
-			<div className='w-full overflow-hidden h-screen'>
+			<div className='w-full'>
 				<Router>
 					<Navbar />
 					<AnimatedRoutes />
