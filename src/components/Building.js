@@ -1,6 +1,4 @@
 import React from 'react'
-import { BsArrowLeft } from 'react-icons/bs'
-import logo from '../assets/img/Logo.png'
 import { motion } from 'framer-motion'
 import suumbike from '../assets/img/suumbike.jpg'
 import Achievment from './Achievment'
@@ -9,40 +7,22 @@ import Buttons from './Buttons'
 const Building = () => {
 	return (
 		<div>
-			<div className='flex justify-between '>
-				<motion.div
-					initial={{ x: -500 }}
-					animate={{ x: 0 }}
-					transition={{ delay: 0.4, type: 'spring', ease: 'easeOut' }}
-				>
-					<button className='w-12 h-12 ml-4 rounded-xl p-3 text-2xl neo'>
-						<BsArrowLeft className='text-slate-800' />
-					</button>
-				</motion.div>
-				<motion.div
-					initial={{ x: 500 }}
-					animate={{ x: 0 }}
-					transition={{ delay: 0.5, type: 'spring', ease: 'easeOut' }}
-				>
-					<div className=' w-12 h-12 mr-4 rounded-xl pt-2 neo'>
-						<img className='w-10 mx-auto' src={logo} alt='logo'></img>
-					</div>
-				</motion.div>
-			</div>
 			<motion.div
-				initial={{ y: 1000 }}
-				animate={{ y: 0 }}
+				initial={{ opacity: '0', y: 1000 }}
+				animate={{ opacity: '1', y: 0 }}
+				exit={{ opacity: '1', x: -500, transition: { duration: '0.5' } }}
 				transition={{
-					delay: 0.3,
+					delay: 0.2,
 					type: 'spring',
 					ease: 'easeOut',
-					damping: '12',
+					damping: '17',
+					duration: '1',
 				}}
 			>
 				<div className='flex justify-center m-4 rounded-xl neo'>
 					<div>
 						<img
-							className='mx-auto rounded-xl neo'
+							className='p-4 w-auto rounded-3xl'
 							src={suumbike}
 							alt='tower'
 						></img>
@@ -57,11 +37,13 @@ const Building = () => {
 			<motion.div
 				initial={{ y: 500 }}
 				animate={{ y: 0 }}
+				exit={{ x: -500, transition: { duration: '0.7' } }}
 				transition={{
-					delay: 0.6,
+					delay: 0.4,
 					type: 'spring',
 					ease: 'easeOut',
 					damping: '18',
+					duration: '1',
 				}}
 			>
 				<Achievment />
