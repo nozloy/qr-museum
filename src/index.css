@@ -6,7 +6,15 @@
     .neo {
         box-shadow: 5px 5px 17px #d9d9d9,
           -5px -5px 17px #ffffff;
+          
       }
+    .cleo {
+      backdrop-filter: blur(4px);
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 50px;
+      box-shadow: 0px 35px 68px 0px rgba(224, 224, 227, 0.5), inset 0px -8px 16px 0px rgba(224, 224, 227, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+                    }
+                    
       .button {@apply text-base w-full font-medium px-6 py-2 leading-normal uppercase}
       .buttonB {@apply button rounded-b-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-0 focus:bg-gray-200 focus:text-gray-600 transition duration-500 cursor-pointer}
       .buttonA {@apply button rounded-t-md bg-green-600 text-white  shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out flex justify-center}
