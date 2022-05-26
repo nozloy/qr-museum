@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
 	const navigate = useNavigate()
 	return (
-		<div className='pt-5'>
+		<div className='pt-5 pb-5'>
 			<div className='flex justify-between '>
 				<motion.div
 					initial={{ x: -500 }}

@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 function App() {
 	return (
 		<div className='App'>
-			<div className='w-full'>
+			<div className='w-full h-full'>
 				<Router>
 					<Navbar />
 					<AnimatedRoutes />
