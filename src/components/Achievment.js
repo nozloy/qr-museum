@@ -7,9 +7,9 @@ const Achievment = () => {
 				<div className='m-5 text-xl font-bold text-slate-800'>
 					Ваш прогресс:
 				</div>
-				<div class='w-content bg-gray-200 rounded-full mx-5 mb-10 neo'>
+				<div className='w-content bg-gray-200 rounded-full mx-5 mb-10 neo'>
 					<div
-						class=' bg-green-500 text-xs font-medium text-white text-center p-1.5 leading-none rounded-full neo'
+						className=' bg-green-500 text-xs font-medium text-white text-center p-1.5 leading-none rounded-full neo'
 						style={{ width: '25%' }}
 					>
 						25%

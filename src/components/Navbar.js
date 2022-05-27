@@ -3,9 +3,11 @@ import { motion } from 'framer-motion'
 import { BsArrowLeft } from 'react-icons/bs'
 import logo from '../assets/img/Logo.png'
 import { useNavigate } from 'react-router-dom'
+//import { LocalStore } from '../data/stores/LocalStore'
 
 const Navbar = () => {
 	const navigate = useNavigate()
+	//const notVisited = LocalStore((state) => state.notVisited)
 	return (
 		<div className='pt-5 pb-5'>
 			<div className='flex justify-between '>
