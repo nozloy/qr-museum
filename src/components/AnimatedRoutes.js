@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import Building from './Building'
 import MediaPlayer from './MediaPlayer'
 import ReaderB from './ReaderB'
+import Home from '../pages/Home'
 import { AnimatePresence } from 'framer-motion'
 
 const AnimatedRoutes = () => {
@@ -11,7 +12,8 @@ const AnimatedRoutes = () => {
 	return (
 		<AnimatePresence exitBeforeEnter>
 			<Routes location={location} key={location.pathname}>
-				<Route path='/' element={<Building />} />
+				<Route path='/' element={<Home />} />
+				<Route path='/building' element={<Building />} />
 				<Route path='/mediaplayer' element={<MediaPlayer />} />
 				<Route path='/reader' element={<ReaderB />} />
 			</Routes>

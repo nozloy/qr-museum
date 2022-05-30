@@ -15,11 +15,7 @@ const Achievment = () => {
 						25%
 					</div>
 				</div>
-				<button
-					className='mx-auto p-2 rounded-xl bg-gradient-to-r from-red-400 to-red-700 text-white w-36 uppercase
-		hover:neo transition-all focus:ring-0 focus:outline-none focus:shadow-md focus:from-red-500 focus:to-red-800
-		hover:focus:from-red-600 hover:to-red-900'
-				>
+				<button className='mx-auto p-2 rounded-xl bg-gradient-to-r from-red-400 to-red-700 text-white w-36 uppercase hover:neo transition-all focus:ring-0 focus:outline-none focus:shadow-md focus:from-red-500 focus:to-red-800 hover:focus:from-red-600 hover:to-red-900'>
 					<div className='text-md font-semibold'>Мои награды</div>
 				</button>
 			</div>

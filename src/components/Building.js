@@ -8,8 +8,8 @@ const Building = () => {
 	return (
 		<div>
 			<motion.div
-				initial={{ opacity: 0, y: 1000 }}
-				animate={{ opacity: 1, y: 0 }}
+				initial={{ opacity: 0, y: 1000, zIndex: -1 }}
+				animate={{ opacity: 1, y: 0, zIndex: -1 }}
 				exit={{ opacity: 0, x: -500, transition: { duration: '0.5' } }}
 				transition={{
 					delay: 0.2,
@@ -35,10 +35,11 @@ const Building = () => {
 				</div>
 			</motion.div>
 			<motion.div
-				initial={{ opacity: 0, y: 500 }}
-				animate={{ opacity: 1, y: 0 }}
+				initial={{ opacity: 0, y: 500, zIndex: -1 }}
+				animate={{ opacity: 1, y: 0, zIndex: -1 }}
 				exit={{ opacity: 0, x: -500, transition: { duration: '0.7' } }}
 				transition={{
+					zIndex: -1,
 					delay: 0.4,
 					type: 'spring',
 					ease: 'easeOut',

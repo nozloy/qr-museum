@@ -3,17 +3,15 @@ import { motion } from 'framer-motion'
 import { BsArrowLeft } from 'react-icons/bs'
 import logo from '../assets/img/Logo.png'
 import { useNavigate } from 'react-router-dom'
-//import { LocalStore } from '../data/stores/LocalStore'
 
 const Navbar = () => {
 	const navigate = useNavigate()
-	//const notVisited = LocalStore((state) => state.notVisited)
 	return (
 		<div className='pt-5 pb-5'>
 			<div className='flex justify-between '>
 				<motion.div
-					initial={{ x: -500 }}
-					animate={{ x: 0 }}
+					initial={{ x: -500, zIndex: -1 }}
+					animate={{ x: 0, zIndex: 1 }}
 					exit={{ x: window.innerWidth }}
 					transition={{ delay: 0.8, type: 'spring', ease: 'easeOut' }}
 				>
@@ -25,7 +23,7 @@ const Navbar = () => {
 					</button>
 				</motion.div>
 				<motion.div
-					initial={{ x: 500 }}
+					initial={{ x: 500, zIndex: -1 }}
 					animate={{ x: 0 }}
 					exit={{ x: 500 }}
 					transition={{ delay: 0.5, type: 'spring', ease: 'easeOut' }}
