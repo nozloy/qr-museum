@@ -1,7 +1,23 @@
-{
-    "captionName": "test",
-    "routerLink": "test",
-    "description": "test",
-    "audioName": "test",
+[
+    {
+    "captionName": "Башня Сююмбике",
+    "routerLink": "syuyumbike",
+    "description": "test-description",
     "isVisited": false
-}
+    },
+    {
+    "captionName": "Центр Эрмитаж-Казань",
+    "routerLink": "ermitazh",
+    "description": "test-description",
+    "audioName": "test-audio",
+    "isVisited": false
+    },
+    {
+    "captionName": "Выставочный зал «Манеж»",
+    "routerLink": "manezh",
+    "description": "test-description",
+    "audioName": "test-audio",
+    "isVisited": false
+    }
+
+]
