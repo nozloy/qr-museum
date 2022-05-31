@@ -3,6 +3,7 @@
     "captionName": "Башня Сююмбике",
     "routerLink": "syuyumbike",
     "description": "test-description",
+    "audioName": "test-audio",
     "isVisited": false
     },
     {

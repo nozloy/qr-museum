@@ -16,13 +16,15 @@ interface buildingStore {
         captionName: string,
         routerLink: string,
         description: string,
-        audioName: string) => void;
+        audioName: string,
+        isVisited: boolean) => void;
+
 
 }
 
 
 export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
-    buildings: [TestData],
+    buildings: TestData,
     newBuilding: (
         captionName: string,
         routerLink: string,
