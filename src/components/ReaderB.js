@@ -6,7 +6,6 @@ const ReaderB = () => {
 	const location = useLocation()
 	const title = location.state ? location.state.title : ''
 	const description = location.state ? location.state.text : ''
-	console.log(location)
 	return (
 		<motion.div
 			initial={{ opacity: '0', x: 500 }}
