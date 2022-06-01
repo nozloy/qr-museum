@@ -3,10 +3,12 @@ import { motion } from 'framer-motion'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import { useLocation } from 'react-router-dom'
+import audio from '../assets/audio/suumbike.mp3'
 
 function MediaPlayer() {
 	const location = useLocation()
 	const audiofile = location.state ? location.state.audio : ''
+	console.log(audio)
 	return (
 		<div>
 			<motion.div
@@ -23,10 +25,7 @@ function MediaPlayer() {
 				animate={{ opacity: '1', x: 0, transition: { delay: 0.2 } }}
 				exit={{ opacity: '1', x: 500, transition: { duration: '0.5' } }}
 			>
-				<AudioPlayer
-					src={`/media/audio/${audiofile ? audiofile : 'audiotest.mp3'}`}
-					onPlay={(e) => console.log('onPlay')}
-				/>
+				<AudioPlayer autoPlay src={audio} />
 			</motion.div>
 		</div>
 	)
