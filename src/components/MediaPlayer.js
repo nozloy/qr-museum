@@ -2,9 +2,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
-import audiofile from '../assets/audio/SoundHelix-Song-1.mp3'
+import audiotest from '../assets/audio/SoundHelix-Song-1.mp3'
+import { useLocation } from 'react-router-dom'
 
 function MediaPlayer() {
+	const location = useLocation()
+	const audiofile = location.state ? location.state.audio : ''
+	console.log(audiofile)
 	return (
 		<div>
 			<motion.div
@@ -21,7 +25,10 @@ function MediaPlayer() {
 				animate={{ opacity: '1', x: 0, transition: { delay: 0.2 } }}
 				exit={{ opacity: '1', x: 500, transition: { duration: '0.5' } }}
 			>
-				<AudioPlayer src={audiofile} onPlay={(e) => console.log('onPlay')} />
+				<AudioPlayer
+					src={audiofile ? '../assets/audio/' + audiofile : audiotest}
+					onPlay={(e) => console.log('onPlay')}
+				/>
 			</motion.div>
 		</div>
 	)
