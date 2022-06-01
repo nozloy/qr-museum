@@ -13,6 +13,7 @@ interface building {
 interface buildingStore {
     buildings: building[];
     setVisited: (routerLink: string) => void;
+    resetVisited: () => void;
 
 
 }
@@ -24,6 +25,12 @@ export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
         const { buildings } = get();
         set({
             buildings: buildings.map((building) => ({...building, isVisited: building.routerLink === routerLink ? true : building.isVisited})) })
+    },
+    resetVisited: () => {
+        const { buildings } = get();
+        set({
+            buildings: buildings.map((building) => ({...building, isVisited: false}))   
+        })
         }
 }),
     {
