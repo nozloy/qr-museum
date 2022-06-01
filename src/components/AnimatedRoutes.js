@@ -15,11 +15,15 @@ const AnimatedRoutes = () => {
 		<AnimatePresence exitBeforeEnter>
 			<Routes location={location} key={location.pathname}>
 				<Route path='/' element={<Home />} />
-				<Route path='/mediaplayer' element={<MediaPlayer />} />
-				<Route path='/reader' element={<ReaderB />} />
+
 				<Route path='/buildings' element={<Buildings />} />
 				<Route path='*' element={<NotFound />} />
 				<Route path='/buildings/:building' element={<Building />} />
+				<Route path='/buildings/:building/reader' element={<ReaderB />} />
+				<Route
+					path='/buildings/:building/mediaplayer'
+					element={<MediaPlayer />}
+				/>
 			</Routes>
 		</AnimatePresence>
 	)

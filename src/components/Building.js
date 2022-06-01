@@ -11,8 +11,6 @@ const Building = () => {
 	const { building } = useParams()
 	const buildings = useBuildingStore((state) => state.buildings)
 	const current = buildings.find((cur) => cur.routerLink === building)
-	//console.log(buildings)
-	console.log(current)
 	return (
 		<div>
 			{current ? (
@@ -40,7 +38,12 @@ const Building = () => {
 									{current.captionName}
 								</h1>
 
-								<Buttons />
+								<Buttons
+									routerlink={building ? building : ''}
+									title={current ? current.captionName : ''}
+									text={current ? current.description : ''}
+									audio={current ? current.audioName : ''}
+								/>
 							</div>
 						</div>
 					</motion.div>

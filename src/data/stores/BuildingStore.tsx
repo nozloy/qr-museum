@@ -12,12 +12,7 @@ interface building {
 
 interface buildingStore {
     buildings: building[];
-    newBuilding: (
-        captionName: string,
-        routerLink: string,
-        description: string,
-        audioName: string,
-        isVisited: boolean) => void;
+    setVisited: (routerLink: string) => void;
 
 
 }
@@ -25,22 +20,10 @@ interface buildingStore {
 
 export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
     buildings: TestData,
-    newBuilding: (
-        captionName: string,
-        routerLink: string,
-        description: string,
-        audioName: string) => {
+    setVisited: (routerLink: string) => {
         const { buildings } = get();
-        const newBuilding = {
-            captionName,
-            routerLink,
-            description,
-            audioName,
-            isVisited: false
-        }
         set({
-           buildings: [newBuilding].concat(buildings) 
-        })
+            buildings: buildings.map((building) => ({...building, isVisited: building.routerLink === routerLink ? true : building.isVisited})) })
         }
 }),
     {
