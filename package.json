@@ -11,11 +11,9 @@
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-h5-audio-player": "^3.8.4",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-yandex-maps": "^4.6.0",
     "web-vitals": "^2.1.4",
     "zustand": "^4.0.0-rc.1"
   },
@@ -45,6 +43,7 @@
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
+    "react-yandex-maps": "^4.6.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.7.2"
   }

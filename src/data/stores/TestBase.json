@@ -3,22 +3,169 @@
     "captionName": "Башня Сююмбике",
     "routerLink": "syuyumbike",
     "description": "Башня вероятнее всего построена в XVII – XVIII веках и получила название в честь казанской царицы Сююмбике, правившей Казанью после смерти своего мужа хана Сафа-Гирея с 1549 по 1551 годы. Строение выполняло функции дозорной башни, с вершины которой просматривается обширная панорама окрестностей с видом на реки Волга и Казанка. Башня Сююмбике возведена из большемерного, хорошо обожженного кирпича, занимает площадь 140 кв.м., состоит из 7 ярусов, а её общая высота достигает 58 метров. 3 нижних различных по высоте квадратных яруса имеют равносторонние квадратные контуры, окруженные по всему периметру открытыми галереями-гульбищами (терраса). Гульбища обнесены парапетами с ширинками на первом ярусе, поясами, выполненными поребриком (бордюр), на втором и третьем ярусах. Нижний ярус башни Сююмбике представляет собой два пилона, соединенных цилиндрическим сводом над проездом между ними. На южном и северном фасадах строения имеются круглые окошки, обрамленные кирпичным валиком, и небольшие двери (по 1 двери на 1 фасаде), которые ведут во внутренние помещения башни. На западном и восточном фасадах пилоны украшены декоративными колоннами (по 2 колонны на 1 сторону обоих пилонов, всего – 8 колонн), завершающимися капителями-консолями по булгарскому образцу. В толще каждого пилона располагаются наклонные сводчатые коридоры с лестницей, ведущей на верхние ярусы башни. Проезд перекрыт современными коваными воротами, которые носят название “День и ночь”. Они были изготовлены в 2003 году по эскизу архитектора Р.М. Забирова. Арка, в которой расположены ворота, направлена на восход Солнца в день зимнего солнцестояния. Это объясняет наличие символических изображений Солнца и Полумесяца, лучей и звёзд, отражающих смену дня и ночи.",
-    "audioName": "suumbike.mp3",
-    "isVisited": false
+    "isVisited": false,
+    "type": "place"
     },
     {
     "captionName": "Центр Эрмитаж-Казань",
     "routerLink": "ermitazh",
     "description": "Центр Эрмитаж-Казань description",
-    "audioName": "test-audio",
-    "isVisited": false
+    "isVisited": false,
+    "type": "place"
     },
     {
     "captionName": "Выставочный зал «Манеж»",
     "routerLink": "manezh",
     "description": "Выставочный зал «Манеж» description",
-    "audioName": "test-audio",
-    "isVisited": false
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 4",
+    "routerLink": "build4",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 5",
+    "routerLink": "build5",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Награда 1",
+    "routerLink": "loot",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "prize"
+    },
+    {
+    "captionName": "Здание 6",
+    "routerLink": "build6",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 7",
+    "routerLink": "build7",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 8",
+    "routerLink": "build8",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 9",
+    "routerLink": "build9",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 10",
+    "routerLink": "build10",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Награда 2",
+    "routerLink": "loot",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "prize"
+    },
+    {
+    "captionName": "Здание 11",
+    "routerLink": "build11",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 12",
+    "routerLink": "build12",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 13",
+    "routerLink": "build13",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 14",
+    "routerLink": "build14",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 15",
+    "routerLink": "build15",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Награда 3",
+    "routerLink": "loot",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "prize"
+    },
+    {
+    "captionName": "Здание 16",
+    "routerLink": "build16",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 17",
+    "routerLink": "build17",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 18",
+    "routerLink": "build18",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 19",
+    "routerLink": "build19",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Здание 20",
+    "routerLink": "build20",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "place"
+    },
+    {
+    "captionName": "Награда 4",
+    "routerLink": "loot",
+    "description": "Описание",
+    "isVisited": false,
+    "type": "prize"
     }
 
 ]

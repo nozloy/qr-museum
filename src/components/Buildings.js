@@ -1,29 +1,61 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { useBuildingStore } from '../data/stores/BuildingStore.tsx'
 import Maps from '../components/Maps'
+import Achievment from './Achievment'
+import { motion } from 'framer-motion'
+import Steps from './Steps'
 
 const Buildings = () => {
-	const buildings = useBuildingStore((state) => state.buildings)
+	const defanimation = {
+		initial: {
+			opacity: 0,
+			x: 500,
+			zIndex: -1,
+		},
+		animate: (custom) => ({
+			opacity: 1,
+			x: 0,
+			zIndex: -1,
+			transition: {
+				type: 'spring',
+				ease: 'easeOut',
+				damping: '17',
+				duration: '1',
+				delay: custom * 0.2,
+			},
+		}),
+		exit: { opacity: 0, x: 500, transition: { duration: '0.5' } },
+	}
 	return (
-		<div>
-			<div className='flex flex-col justify-center m-4 rounded-xl neo p-5'>
-				{buildings.map((building) => {
-					return (
-						<Link key={building.captionName} to={building.routerLink}>
-							<button
-								className='text-slate-700 w-5/6 border-2 m-2 p-2 mx-auto rounded-xl neo disabled:bg-slate-400 disabled:text-gray-200'
-								disabled={!building.isVisited}
-							>
-								{building.captionName}
-							</button>
-						</Link>
-					)
-				})}
-			</div>
-			<div className='flex justify-center m-4 rounded-xl neo p-5'>
+		<div className='w-screen'>
+			{/* <motion.div
+				variants={defanimation}
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				custom={1}
+			>
+				<Achievment />
+			</motion.div> */}
+			<motion.div
+				variants={defanimation}
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				className='flex flex-col justify-center'
+				custom={2}
+			>
+				<Steps />
+			</motion.div>
+			{/* <motion.div
+				variants={defanimation}
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				custom={3}
+				className='flex justify-center m-4 rounded-xl neo overflow-hidden'
+			>
 				<Maps />
-			</div>
+			</motion.div> */}
 		</div>
 	)
 }

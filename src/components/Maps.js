@@ -3,7 +3,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps'
 
 const Maps = () => {
 	return (
-		<div className='w-screen h-screen max-h-96'>
+		<div className='w-screen h-screen max-h-96 rounded-xl'>
 			<YMaps>
 				<Map
 					defaultState={{
@@ -17,7 +17,7 @@ const Maps = () => {
 						minZoom: 15,
 						maxZoom: 18,
 					}}
-					className='flex justify-center px-1 mx-auto h-full rounded-xl'
+					className='flex justify-center mx-0 h-full'
 				>
 					<Placemark geometry={[55.796129, 49.106408]} />
 				</Map>

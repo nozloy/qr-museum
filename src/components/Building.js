@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import imageplaceholder from '../assets/img/300x300.svg'
-import Achievment from './Achievment'
 import Buttons from './Buttons'
 import { useParams } from 'react-router-dom'
 import NotFound from '../components/NotFound'
@@ -42,7 +41,6 @@ const Building = () => {
 									routerlink={building ? building : ''}
 									title={current ? current.captionName : ''}
 									text={current ? current.description : ''}
-									audio={current ? current.audioName : ''}
 								/>
 							</div>
 						</div>
@@ -59,9 +57,7 @@ const Building = () => {
 							damping: '18',
 							duration: '1',
 						}}
-					>
-						<Achievment />
-					</motion.div>
+					></motion.div>
 				</>
 			) : (
 				<NotFound />

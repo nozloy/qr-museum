@@ -6,8 +6,8 @@ interface building {
     captionName: string;
     routerLink: string;
     description: string;
-    audioName: string;
     isVisited: boolean;
+    type: string;
 }
 
 interface buildingStore {
@@ -34,5 +34,6 @@ export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
         }
 }),
     {
-    name: 'BuildingsStore'
+        name: 'BuildingsStore',
+        version: 2
 }))
