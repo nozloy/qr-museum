@@ -15,7 +15,7 @@ const AnimatedRoutes = () => {
 		<AnimatePresence exitBeforeEnter>
 			<Routes location={location} key={location.pathname}>
 				<Route path='/' element={<Navigate to='/buildings' replace />} />
-
+				<Route path='/home' element={<Home />} />
 				<Route path='/buildings' element={<Buildings />} />
 				<Route path='/buildings/map' element={<Maps />} />
 				<Route path='*' element={<NotFound />} />

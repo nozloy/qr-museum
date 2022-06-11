@@ -41,7 +41,7 @@ const Buildings = () => {
 				initial='initial'
 				animate='animate'
 				exit='exit'
-				className='flex flex-col justify-center'
+				className=' -z-10 flex flex-col justify-center'
 				custom={2}
 			>
 				<Steps />

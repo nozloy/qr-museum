@@ -10,7 +10,8 @@ export const LocalStore = create(persist<Visit>((set) => ({
 			setNotVisited: (notVisited: boolean) =>set({ notVisited: notVisited }),
 		}),
 		{
-			name: 'visit'
+			name: 'visit',
+			version: 1
 		}
 	)
 )

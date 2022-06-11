@@ -28,7 +28,7 @@ const Steps = () => {
 											)}
 										</div>
 										<div
-											className={`flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10 ${
+											className={`flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative ${
 												building.isVisited
 													? building.type === 'place'
 														? 'bg-green-300'
