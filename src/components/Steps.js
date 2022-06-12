@@ -38,7 +38,7 @@ const Steps = () => {
 										>
 											{' '}
 											{(building.type === 'prize') & !building.isVisited ? (
-												<span class='animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75 -z-10'></span>
+												<span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75 -z-10'></span>
 											) : (
 												''
 											)}

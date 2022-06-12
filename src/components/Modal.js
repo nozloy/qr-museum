@@ -4,7 +4,11 @@ import { motion } from 'framer-motion'
 
 const Modal = ({ handleClose }) => {
 	return (
-		<Backdrop onClick={handleClose}>
+		<Backdrop
+			// doubled this prop, cause there are some bug with backdrop-blur and bg-color
+			className='backdrop-blur-sm bg-slate-900/25'
+			onClick={handleClose}
+		>
 			<motion.dialog
 				initial={{ y: -900, zIndex: 20 }}
 				animate={{ y: 0 }}
@@ -16,7 +20,7 @@ const Modal = ({ handleClose }) => {
 				}}
 				open
 				id='first-visit-dialog'
-				className=' inset-x-5 my-auto mx-5 px-3 py-3 bg-yellow-100 rounded-lg text-base text-yellow-700 h-min w-auto'
+				className='inset-x-5 my-auto mx-5 px-3 py-3 bg-yellow-100 rounded-lg text-base text-yellow-700 h-min w-auto'
 			>
 				<strong>Святая корова, Вы тут в первый раз!</strong>
 				<p className='py-2'>
