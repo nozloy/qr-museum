@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import imageplaceholder from '../assets/img/300x300.svg'
+// import imageplaceholder from '../assets/img/300x300.svg'
 import Buttons from './Buttons'
 import { useParams } from 'react-router-dom'
 import NotFound from '../components/NotFound'
 import { useBuildingStore } from '../data/stores/BuildingStore.tsx'
+import Scene3D from './Scene3D'
 
 const Building = () => {
 	const { building } = useParams()
@@ -28,20 +29,22 @@ const Building = () => {
 					>
 						<div className='flex justify-center m-4 rounded-xl neo'>
 							<div>
-								<img
-									className='p-4 w-auto mx-auto rounded-3xl fill-slate-500'
-									src={imageplaceholder}
-									alt='image_placeholder'
-								></img>
+								<Scene3D />
 								<h1 className='m-5 text-2xl font-bold text-slate-800'>
 									{current.captionName}
 								</h1>
-
-								<Buttons
-									routerlink={building ? building : ''}
-									title={current ? current.captionName : ''}
-									text={current ? current.description : ''}
-								/>
+								{current.type === 'place' ? (
+									<Buttons
+										routerlink={building ? building : ''}
+										title={current ? current.captionName : ''}
+										text={current ? current.description : ''}
+									/>
+								) : (
+									<div className='text-xl font-normal mb-5 mx-2'>
+										{current.description}
+										<div className='m-3 text-4xl font-bold'>SM1209</div>
+									</div>
+								)}
 							</div>
 						</div>
 					</motion.div>
