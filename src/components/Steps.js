@@ -2,12 +2,19 @@ import React from 'react'
 import { useBuildingStore } from '../data/stores/BuildingStore.tsx'
 import { Link } from 'react-router-dom'
 
+let lootcheck = (k, unlock) => {
+	console.log(k, unlock)
+	return k === unlock
+}
+
 const Steps = () => {
 	const buildings = useBuildingStore((state) => state.buildings)
 	let completed = buildings.filter(
 		(building) => building.isVisited === true && building.type === 'place'
 	)
 	let summary = buildings.filter((building) => building.type === 'place')
+	let unlock = Math.floor(completed.length / 5)
+	let k = 1
 	return (
 		<section className='text-gray-600 body-font'>
 			<div className='text-2xl mb-5 font-bold neo mx-5 p-3 rounded-xl'>
@@ -71,11 +78,15 @@ const Steps = () => {
 												)}
 											</svg>
 										</div>
-										<div className=' pl-4'>
+										<div className='pl-4'>
 											<Link key={building.captionName} to={building.routerLink}>
 												<button
-													className='font-medium title-font text-xl text-slate-600 mb-1 mt-1 tracking-wider disabled:text-slate-500'
-													disabled={!building.isVisited}
+													className='font-medium title-font text-xl text-slate-600 p-1 mb-1 mt-1 tracking-wider text-left disabled:text-slate-500'
+													disabled={
+														building.type === 'place'
+															? !building.isVisited
+															: !lootcheck(k++, unlock)
+													}
 												>
 													{building.captionName}
 												</button>
@@ -86,14 +97,6 @@ const Steps = () => {
 										</div>
 									</div>
 								</div>
-								/* <Link key={building.captionName} to={building.routerLink}>
-									<button
-										className='subpixel-antialiased text-xl font-medium text-slate-600 w-5/6 border-2 m-2 p-1 mx-auto rounded-xl neo disabled:bg-gray-200 disabled:text-slate-500'
-										disabled={!building.isVisited}
-									>
-										{building.captionName}
-									</button>
-								</Link> */
 							)
 						})}
 						{/* <div className='flex relative'>

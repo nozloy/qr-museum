@@ -1,6 +1,4 @@
 import React from 'react'
-import Maps from '../components/Maps'
-import Achievment from './Achievment'
 import { motion } from 'framer-motion'
 import Steps from './Steps'
 
