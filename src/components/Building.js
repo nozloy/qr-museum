@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-// import imageplaceholder from '../assets/img/300x300.svg'
 import Buttons from './Buttons'
 import { useParams } from 'react-router-dom'
 import NotFound from '../components/NotFound'
