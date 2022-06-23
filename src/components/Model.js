@@ -1,9 +1,10 @@
 import React, { useRef, useLayoutEffect } from 'react'
 import { useGLTF, OrbitControls } from '@react-three/drei'
+import { PointLight } from 'three'
 
 export default function Model(props) {
 	const group = useRef()
-	const { scene, nodes } = useGLTF('/syuyumbike.glb')
+	const { scene, nodes } = useGLTF('/syuyumbike2.gltf')
 	useLayoutEffect(() =>
 		Object.values(nodes).forEach(
 			(node) => (node.receiveShadow = node.castShadow = true)
@@ -20,12 +21,15 @@ export default function Model(props) {
 			castShadow={true}
 		>
 			<primitive object={scene} {...props} />
+			<pointLight position={[0, 8, 0]} color='#FF5D55' />
 			<OrbitControls
 				makeDefault
-				//minAzimuthAngle={0}
-				//maxAzimuthAngle={Math.PI}
+				minAzimuthAngle={0}
+				maxAzimuthAngle={Math.PI}
 				minPolarAngle={Math.PI / 4}
 				maxPolarAngle={Math.PI / 3}
+				// minPolarAngle={Math.PI / 10}
+				// maxPolarAngle={Math.PI}
 				enableZoom={false}
 				enablePan={false}
 				zoomSpeed={0.3}
@@ -34,4 +38,4 @@ export default function Model(props) {
 	)
 }
 
-useGLTF.preload('/syuyumbike.glb')
+useGLTF.preload('/syuyumbike2.gltf')

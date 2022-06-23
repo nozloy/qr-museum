@@ -16,7 +16,7 @@ export default function Scene3D() {
 
 					<spotLight
 						angle={0.34}
-						color='#ffd0d0'
+						color='#ffffff'
 						penumbra={1}
 						position={[-25, 50, 20]}
 						shadow-mapSize={[2048, 2048]}
@@ -24,7 +24,7 @@ export default function Scene3D() {
 						castShadow
 					/>
 					<hemisphereLight
-						color={'#ffd0d0'}
+						color={'#ffffff'}
 						groundColor={(0.095, 1, 0.75)}
 						position={(0, 50, 0)}
 					/>
