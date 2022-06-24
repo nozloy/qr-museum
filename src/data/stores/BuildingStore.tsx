@@ -8,6 +8,7 @@ interface building {
     description: string;
     isVisited: boolean;
     type: string;
+    model: string;
 }
 
 interface buildingStore {
@@ -35,5 +36,5 @@ export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
 }),
     {
         name: 'BuildingsStore',
-        version: 2
+        version: 4
 }))

@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Model from './Model'
 
-export default function Scene3D() {
+export default function Scene3D({ modelPath }) {
 	return (
 		<div className='mt-5 h-96 w-full'>
 			<Canvas
@@ -29,7 +29,7 @@ export default function Scene3D() {
 						position={(0, 50, 0)}
 					/>
 
-					<Model />
+					<Model modelPath={modelPath} />
 
 					{/* <Sky
 						distance={3000}

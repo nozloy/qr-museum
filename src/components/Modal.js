@@ -22,17 +22,17 @@ const Modal = ({ handleClose }) => {
 				id='first-visit-dialog'
 				className='inset-x-5 my-auto mx-5 px-3 py-3 bg-yellow-100 rounded-lg text-base text-yellow-700 h-min w-auto'
 			>
-				<strong>Святая корова, Вы тут в первый раз!</strong>
+				<strong>Приветствуем Вас в музее Казанского Кремля!</strong>
 				<p className='py-2'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla
-					enim, pharetra vitae arcu ac, semper sollicitudin tortor. Sed at
-					venenatis elit. Sed vel diam vitae lectus suscipit iaculis. Duis a
-					aliquam lorem. Quisque sit amet diam at libero finibus semper nec at
-					urna. Aliquam in luctus lorem. Suspendisse potenti. Sed ac nibh id
-					nulla porttitor blandit. Aenean mattis massa dui, a sollicitudin leo
-					condimentum quis. Nam id faucibus orci. Phasellus ultricies dignissim
-					accumsan. Mauris nisl orci, ornare vitae malesuada vel, porta sed
-					nibh.
+					Вы нашли один из множества QR-кодов, которые помогут Вам узнать больше
+					о зданиях на территории Казанского Кремля.
+				</p>
+				<p className='p-3'>
+					Посетив все объекты, Вы получите отличные скидки и бонусы.
+				</p>
+				<p>
+					Свой прогресс и доступные призы можно посмотреть нажав на значок
+					справа-вверху.
 				</p>
 				{/* <button className='mx-auto flex justify-center font-bold m-3 px-3 py-2 text-md text-yellow-900 border-2 rounded-xl border-yellow-800 opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-yellow-900 hover:opacity-75 hover:no-underline'>
 					Принять

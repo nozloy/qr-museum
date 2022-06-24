@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { BsArrowLeft } from 'react-icons/bs'
 import logo from '../assets/img/Logo.png'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Navbar = () => {
 	const navigate = useNavigate()
@@ -24,13 +24,15 @@ const Navbar = () => {
 				</motion.div>
 				<motion.div
 					initial={{ x: 500, zIndex: -1 }}
-					animate={{ x: 0 }}
+					animate={{ x: 0, zIndex: 1 }}
 					exit={{ x: 500 }}
 					transition={{ delay: 0.5, type: 'spring', ease: 'easeOut' }}
 				>
-					<div className=' w-12 h-12 mr-4 rounded-xl pt-2 neo'>
-						<img className='w-10 mx-auto' src={logo} alt='logo'></img>
-					</div>
+					<Link to={{ pathname: '/buildings' }}>
+						<button className=' w-12 h-12 mr-4 rounded-xl neo'>
+							<img className='w-10 mx-auto' src={logo} alt='logo'></img>
+						</button>
+					</Link>
 				</motion.div>
 			</div>
 		</div>

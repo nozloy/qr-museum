@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Steps from './Steps'
+import Maps from './Maps'
 
 const Buildings = () => {
 	const defanimation = {
@@ -44,7 +45,7 @@ const Buildings = () => {
 			>
 				<Steps />
 			</motion.div>
-			{/* <motion.div
+			<motion.div
 				variants={defanimation}
 				initial='initial'
 				animate='animate'
@@ -53,7 +54,7 @@ const Buildings = () => {
 				className='flex justify-center m-4 rounded-xl neo overflow-hidden'
 			>
 				<Maps />
-			</motion.div> */}
+			</motion.div>
 		</div>
 	)
 }

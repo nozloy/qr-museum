@@ -1,10 +1,10 @@
 import React, { useRef, useLayoutEffect } from 'react'
 import { useGLTF, OrbitControls } from '@react-three/drei'
-import { PointLight } from 'three'
 
-export default function Model(props) {
+export default function Model({ modelPath }) {
 	const group = useRef()
-	const { scene, nodes } = useGLTF('/syuyumbike2.gltf')
+	const { scene, nodes } = useGLTF(modelPath)
+
 	useLayoutEffect(() =>
 		Object.values(nodes).forEach(
 			(node) => (node.receiveShadow = node.castShadow = true)
@@ -13,14 +13,13 @@ export default function Model(props) {
 	return (
 		<group
 			ref={group}
-			{...props}
 			dispose={null}
 			scale={1}
 			position={[0, -20, 0]}
 			rotation={[Math.PI / -75, -0.5, 0]}
 			castShadow={true}
 		>
-			<primitive object={scene} {...props} />
+			<primitive object={scene} />
 			<pointLight position={[0, 8, 0]} color='#FF5D55' />
 			<OrbitControls
 				makeDefault
@@ -38,4 +37,4 @@ export default function Model(props) {
 	)
 }
 
-useGLTF.preload('/syuyumbike2.gltf')
+useGLTF.preload('/test.gltf')

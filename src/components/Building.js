@@ -5,11 +5,14 @@ import { useParams } from 'react-router-dom'
 import NotFound from '../components/NotFound'
 import { useBuildingStore } from '../data/stores/BuildingStore.tsx'
 import Scene3D from './Scene3D'
+import Question from './Question'
 
 const Building = () => {
 	const { building } = useParams()
 	const buildings = useBuildingStore((state) => state.buildings)
 	const current = buildings.find((cur) => cur.routerLink === building)
+	const modelPath = `/${current.model}.gltf`
+	console.log(modelPath)
 	return (
 		<div>
 			{current ? (
@@ -28,13 +31,17 @@ const Building = () => {
 					>
 						<div className='flex justify-center m-4 rounded-xl neo'>
 							<div>
-								<Scene3D />
+								{{ modelPath } ? (
+									<Scene3D modelPath={modelPath} />
+								) : (
+									<div></div>
+								)}
 								<h1 className='m-5 text-2xl font-bold text-slate-800'>
 									{current.captionName}
 								</h1>
 								{current.type === 'place' ? (
 									<Buttons
-										routerlink={building ? building : ''}
+										routerLink={current ? current.routerLink : ''}
 										title={current ? current.captionName : ''}
 										text={current ? current.description : ''}
 									/>
@@ -59,7 +66,10 @@ const Building = () => {
 							damping: '18',
 							duration: '1',
 						}}
-					></motion.div>
+					>
+						{' '}
+						<Question routerLink={current.routerLink} />
+					</motion.div>
 				</>
 			) : (
 				<NotFound />
