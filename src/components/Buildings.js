@@ -53,7 +53,7 @@ const Buildings = () => {
 				custom={3}
 				className='flex justify-center m-4 rounded-xl neo overflow-hidden'
 			>
-				<Maps />
+				{/* <Maps /> */}
 			</motion.div>
 		</div>
 	)

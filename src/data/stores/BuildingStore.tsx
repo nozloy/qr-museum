@@ -36,5 +36,5 @@ export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
 }),
     {
         name: 'BuildingsStore',
-        version: 4
+        version: 2
 }))

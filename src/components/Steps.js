@@ -3,7 +3,8 @@ import { useBuildingStore } from '../data/stores/BuildingStore.tsx'
 import { Link } from 'react-router-dom'
 
 let lootcheck = (k, unlock) => {
-	console.log(k, unlock)
+	//console.log(k, unlock)
+	//console.log(!(k === unlock))
 	return k === unlock
 }
 
@@ -36,10 +37,12 @@ const Steps = () => {
 										</div>
 										<div
 											className={`flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative ${
-												building.isVisited
-													? building.type === 'place'
+												building.type === 'place'
+													? building.isVisited
 														? 'bg-green-300'
-														: 'bg-yellow-300'
+														: 'bg-slate-400'
+													: lootcheck(k, unlock)
+													? 'bg-yellow-300'
 													: 'bg-slate-400'
 											}`}
 										>
@@ -81,7 +84,7 @@ const Steps = () => {
 										<div className='pl-4'>
 											<Link key={building.captionName} to={building.routerLink}>
 												<button
-													className='font-medium title-font text-xl text-slate-600 p-1 mb-1 mt-1 tracking-wider text-left disabled:text-slate-500'
+													className=' font-medium title-font text-xl text-slate-600 p-1 mb-1 mt-1 tracking-wider text-left disabled:text-slate-400'
 													disabled={
 														building.type === 'place'
 															? !building.isVisited

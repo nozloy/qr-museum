@@ -12,7 +12,8 @@ const Building = () => {
 	const buildings = useBuildingStore((state) => state.buildings)
 	const current = buildings.find((cur) => cur.routerLink === building)
 	const modelPath = `/${current.model}.gltf`
-	console.log(modelPath)
+	const scale = current.scale
+	//console.log(scale)
 	return (
 		<div>
 			{current ? (
@@ -31,8 +32,8 @@ const Building = () => {
 					>
 						<div className='flex justify-center m-4 rounded-xl neo'>
 							<div>
-								{{ modelPath } ? (
-									<Scene3D modelPath={modelPath} />
+								{current.model ? (
+									<Scene3D modelPath={modelPath} scale={scale} />
 								) : (
 									<div></div>
 								)}
@@ -54,22 +55,26 @@ const Building = () => {
 							</div>
 						</div>
 					</motion.div>
-					<motion.div
-						initial={{ opacity: 0, y: 500, zIndex: -1 }}
-						animate={{ opacity: 1, y: 0, zIndex: -1 }}
-						exit={{ opacity: 0, x: -500, transition: { duration: '0.7' } }}
-						transition={{
-							zIndex: -1,
-							delay: 0.4,
-							type: 'spring',
-							ease: 'easeOut',
-							damping: '18',
-							duration: '1',
-						}}
-					>
-						{' '}
-						<Question routerLink={current.routerLink} />
-					</motion.div>
+					{current.type === 'place' ? (
+						<motion.div
+							initial={{ opacity: 0, y: 500, zIndex: -1 }}
+							animate={{ opacity: 1, y: 0, zIndex: -1 }}
+							exit={{ opacity: 0, x: -500, transition: { duration: '0.7' } }}
+							transition={{
+								zIndex: -1,
+								delay: 0.4,
+								type: 'spring',
+								ease: 'easeOut',
+								damping: '18',
+								duration: '1',
+							}}
+						>
+							{' '}
+							<Question routerLink={current.routerLink} />
+						</motion.div>
+					) : (
+						<div></div>
+					)}
 				</>
 			) : (
 				<NotFound />
