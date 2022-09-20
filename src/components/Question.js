@@ -16,7 +16,13 @@ const config = {
 	colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
 }
 
-const Question = ({ routerLink }) => {
+const Question = ({
+	routerLink,
+	qCaption,
+	answerone,
+	answertwo,
+	answerthree,
+}) => {
 	const [isActive, setIsActive] = React.useState(false)
 	const setVisited = useBuildingStore((state) => state.setVisited)
 	const buildings = useBuildingStore((state) => state.buildings)
@@ -28,7 +34,7 @@ const Question = ({ routerLink }) => {
 	const color = current.isVisited ? 'bg-green-300 text-white' : 'text-slate-700'
 	return (
 		<div className='flex flex-col justify-center m-4 rounded-xl neo'>
-			<h1 className='font-bold pt-5 text-2xl'>Несложный вопрос</h1>
+			<h1 className='font-bold pt-5 px-3 text-2xl'>{qCaption}</h1>
 			<div className='flex flex-col justify-center m-4 p-10 pt-0 mt-0'>
 				<button
 					onClick={() => {
@@ -37,7 +43,7 @@ const Question = ({ routerLink }) => {
 					}}
 					className={`w-full rounded-xl neo border-2 mx-auto mt-10 p-2 font-bold ${color} `}
 				>
-					Ответ 1
+					{answerone}
 					<Confetti
 						className='flex justify-center'
 						active={isActive}
@@ -49,11 +55,11 @@ const Question = ({ routerLink }) => {
 					onClick={() => null}
 					className='w-full text-slate-700 rounded-xl neo border-2 mx-auto mt-10 p-2 font-bold'
 				>
-					Ответ 2
+					{answertwo}
 				</button>
 
 				<button className='w-full text-slate-700 rounded-xl neo border-2 mx-auto mt-10 p-2 font-bold'>
-					Ответ 3
+					{answerthree}
 				</button>
 			</div>
 		</div>

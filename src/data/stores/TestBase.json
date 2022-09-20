@@ -6,7 +6,11 @@
     "isVisited": false,
     "type": "place",
     "model": "spastower",
-    "scale": 1.6
+    "scale": 1.6,
+    "qcaption": "Как изначально был устроен въезд через Спасскую башню?",
+    "answerone":"в форме «колена»",
+    "answertwo":"«прямой въезд»",
+    "answerthree":"проезда не было"
     },
     {
     "captionName": "Подклет Спасо-Преображенского собора",
@@ -15,7 +19,11 @@
     "isVisited": false,
     "type": "place",
     "model": "podklet",
-    "scale": 1
+    "scale": 1,
+    "qcaption": "Подклет – это:",
+    "answerone":"монастарский склеп",
+    "answertwo":"музеефицированный цокольный этаж",
+    "answerthree":"фрагмент убранства церковного алтаря"
     },
     {
     "captionName": "Бывшая церковь Николы Ратного",
@@ -24,7 +32,11 @@
     "isVisited": false,
     "type": "place",
     "model": "nikolaratnuy",
-    "scale": 1.2
+    "scale": 1.2,
+    "qcaption": "В результате чего была разрушена церковь Николая Ратного в 1815 году?",
+    "answerone":"пожара",
+    "answertwo":"наводнения",
+    "answerthree":"землетрясения"
     },
     {
     "captionName": "Братский корпус",
@@ -33,7 +45,11 @@
     "isVisited": false,
     "type": "place",
     "model": "bratsky",
-    "scale": 1
+    "scale": 1,
+    "qcaption": "В какой период времени был построен корпус монашеских келий – братский корпус?",
+    "answerone":"1590-х гг",
+    "answertwo":"1650-х гг",
+    "answerthree":"1670-х гг"
     },
     {
     "captionName": "Преображенская башня",
@@ -42,7 +58,11 @@
     "isVisited": false,
     "type": "place",
     "model": "preob",
-    "scale": 4.5
+    "scale": 4.5,
+    "qcaption": "Какая фигура украшает флигель на вершине Преображенской башни?",
+    "answerone":"белый барс",
+    "answertwo":"батыр",
+    "answerthree":"змей Зилант"
     },
     {
     "captionName": "Промокод на скидку 20%",
@@ -59,7 +79,11 @@
     "isVisited": false,
     "type": "place",
     "model": "manej",
-    "scale": 1
+    "scale": 1,
+    "qcaption": "Для каких целей использовался манеж?",
+    "answerone":"Конная подготовка",
+    "answertwo":"Строевая подготовка",
+    "answerthree":"Офицерский клуб"
     },
     {
     "captionName": "Юнкерское училище",
@@ -68,7 +92,11 @@
     "isVisited": false,
     "type": "place",
     "model": "unker",
-    "scale": 0.3
+    "scale": 0.3,
+    "qcaption": "Военные кантонисты это:",
+    "answerone":"особый род войск XVIII-XIX вв.",
+    "answertwo":"несовершеннолетние сыновья солдат",
+    "answerthree":"военные священнослужители"
     },
     {
     "captionName": "Мечеть Кул Шариф",
@@ -77,7 +105,11 @@
     "isVisited": false,
     "type": "place",
     "model": "coolsharif",
-    "scale": 1.5
+    "scale": 1.5,
+    "qcaption": "Для чего при строительстве мечети на пятом ярусе предусмотрели балконы?",
+    "answerone":"для богослужений",
+    "answertwo":"для туристов",
+    "answerthree":"элемент внутреннего убранства"
     },
     {
     "captionName": "Пушечный двор - гланый корпус",
@@ -86,7 +118,11 @@
     "isVisited": false,
     "type": "place",
     "model": "cannonyard",
-    "scale": 0.4
+    "scale": 0.4,
+    "qcaption": "Что размещалось в восточном корпусе Пушечного двора?",
+    "answerone":"оружейный завод и арсенал",
+    "answertwo":"«деревообделывающие» мастерские",
+    "answerthree":"складские помещения"
     },
     {
     "captionName": "Пушечный двор - южный корпус",
@@ -95,7 +131,11 @@
     "isVisited": false,
     "type": "place",
     "model": "cannonyardsouth",
-    "scale": 1.2
+    "scale": 1.2,
+    "qcaption": "Чья технология использовалась при строительстве воздуховодов в южном корпусе Пушечного двора?",
+    "answerone":"немецкая",
+    "answertwo":"английская",
+    "answerthree":"голландская"
     },
     {
     "captionName": "Награда 2",
@@ -113,7 +153,11 @@
     "isVisited": false,
     "type": "place",
     "model": "archhouse",
-    "scale": 0.7
+    "scale": 0.7,
+    "qcaption": "Кто пожаловал деньги на восстановление Архиерейского дома?",
+    "answerone":"Александр III",
+    "answertwo":"Николай I",
+    "answerthree":"Николай II"
     },
     {
     "captionName": "Здание Духовной консистории",
@@ -122,7 +166,11 @@
     "isVisited": false,
     "type": "place",
     "model": "duhkonsist",
-    "scale": 0.7
+    "scale": 0.7,
+    "qcaption": "Кто был отлучён от церкви по решению чиновников духовной консистории?",
+    "answerone":"Алексей Пешков",
+    "answertwo":"Максим Горький",
+    "answerthree":"Иегудиил Хламида"
     },
     {
     "captionName": "Благовещенский собор",
@@ -131,7 +179,11 @@
     "isVisited": false,
     "type": "place",
     "model": "blagsobor",
-    "scale": 0.4
+    "scale": 0.4,
+    "qcaption": "В какой части Казанского Кремля царь Иван IV избрал место для строительства собора?",
+    "answerone":"западной",
+    "answertwo":"северной",
+    "answerthree":"южной"
     },
     {
     "captionName": "Резиденция Президента РТ",
@@ -140,7 +192,11 @@
     "isVisited": false,
     "type": "place",
     "model": "presidentpalace",
-    "scale": 0.4
+    "scale": 0.4,
+    "qcaption": "Какое количество помещений включали в себя императорские квартиры, располагавшиеся на верхнем этаже?",
+    "answerone":"21",
+    "answertwo":"19",
+    "answerthree":"17"
     },
     {
     "captionName": "Башня Сююмбике",
@@ -149,7 +205,11 @@
     "isVisited": false,
     "type": "place",
     "model": "syuyumbike",
-    "scale": 1
+    "scale": 1,
+    "qcaption": "Какое количество ярусов имеет Башня Сююмбике?",
+    "answerone":"Семь",
+    "answertwo":"Девять",
+    "answerthree":"Одиннадцать"
     },
     {
     "captionName": "Награда 3",
@@ -167,7 +227,11 @@
     "isVisited": false,
     "type": "place",
     "model": "mavzoley",
-    "scale": 1
+    "scale": 1,
+    "qcaption": "Чьи останки были доподлинно установлены антропологической экспертизой после обнаружения мавзолея?",
+    "answerone":"Хан Улу-Мухаммед",
+    "answertwo":"Хан Махмуда и его внук Мухаммад-Эмина",
+    "answerthree":"Хан Абдул-Латиф"
     },
     {
     "captionName": "Дворцовая церковь",
@@ -176,7 +240,11 @@
     "isVisited": false,
     "type": "place",
     "model": "palacechurch",
-    "scale": 0.7
+    "scale": 0.7,
+    "qcaption": "Как называли Введенскую церковь?",
+    "answerone":"«домовой»",
+    "answertwo":"«постовой»",
+    "answerthree":"«пороховой»"
     },
     {
     "captionName": "Тайницкая башня",
@@ -185,7 +253,11 @@
     "isVisited": false,
     "type": "place",
     "model": "taytower",
-    "scale": 4
+    "scale": 4,
+    "qcaption": "Куда вёл тайный ход из башни Нур-Али, располагавшейся в этой части кремля?",
+    "answerone":"в ханский дворец",
+    "answertwo":"к источнику питьевой воды",
+    "answerthree":"к другой башне"
     },
     {
     "captionName": "Консисторская башня",
@@ -194,7 +266,11 @@
     "isVisited": false,
     "type": "place",
     "model": "consistortower",
-    "scale": 1.7
+    "scale": 1.7,
+    "qcaption": "В качестве чего использовалась Консисторская башня в XVIII веке?",
+    "answerone":"склада боеприпасов",
+    "answertwo":"тюрьмы",
+    "answerthree":"казарм"
     },
     {
     "captionName": "Присутственные места",
@@ -203,7 +279,11 @@
     "isVisited": false,
     "type": "place",
     "model": "prismest",
-    "scale": 0.25
+    "scale": 0.25,
+    "qcaption": "В честь приезда какого государственного деятеля в тронном зале присутственных мест был устроен первый бал?",
+    "answerone":"Екатерина II",
+    "answertwo":"Павел I",
+    "answerthree":"Александр I"
     },
     {
     "captionName": "Награда 4",

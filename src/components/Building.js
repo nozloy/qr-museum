@@ -13,6 +13,10 @@ const Building = () => {
 	const current = buildings.find((cur) => cur.routerLink === building)
 	const modelPath = `/${current.model}.gltf`
 	const scale = current.scale
+	const qCaption = current.qcaption
+	const answerone = current.answerone
+	const answertwo = current.answertwo
+	const answerthree = current.answerthree
 	//console.log(scale)
 	return (
 		<div>
@@ -70,7 +74,13 @@ const Building = () => {
 							}}
 						>
 							{' '}
-							<Question routerLink={current.routerLink} />
+							<Question
+								routerLink={current.routerLink}
+								qCaption={qCaption ? qCaption : ''}
+								answerone={answerone ? answerone : 'Ответ'}
+								answertwo={answertwo ? answertwo : 'Ответ'}
+								answerthree={answerthree ? answerthree : 'Ответ'}
+							/>
 						</motion.div>
 					) : (
 						<div></div>
