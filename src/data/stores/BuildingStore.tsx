@@ -1,6 +1,6 @@
 import create from 'zustand'
 import { persist } from 'zustand/middleware'
-import TestData from './TestBase.json'
+import Data from './Base.json'
 
 interface building {
     captionName: string;
@@ -8,7 +8,7 @@ interface building {
     description: string;
     isVisited: boolean;
     type: string;
-    model: string;
+
 }
 
 interface buildingStore {
@@ -21,7 +21,7 @@ interface buildingStore {
 
 
 export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
-    buildings: TestData,
+    buildings: Data,
     setVisited: (routerLink: string) => {
         const { buildings } = get();
         set({
@@ -36,5 +36,5 @@ export const useBuildingStore = create(persist<buildingStore>((set, get) => ({
 }),
     {
         name: 'BuildingsStore',
-        version: 1
+        version: 3
 }))
